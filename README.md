@@ -59,6 +59,6 @@ mysql> grant all on db_phonebook.* to 'springuser'@'%'; -- Gives all privileges 
 
 ##
 
-To start the server, simply start the Docker container by running `docker start [container]`.\
+To start the server, start the Docker container by running `docker start [container]`.
 
 From here, create the Spring classes as specified in the phonebook_spring repo. 
