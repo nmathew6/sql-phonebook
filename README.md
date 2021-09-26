@@ -36,7 +36,17 @@ Here are commonly used Docker commands:
 For more detailed directions for steps 1-3, follow the steps on the phoenixNAP tutorial, except use the command from 2.2 instead of the command in the directions
 (which doesn't bind the container to a port). 
 
-### 5. Create new user in MySQL client
+### 5. Check connectivity to database server from shell and mySQLWorkbench
+
+#### From shell
+<img width="1350" alt="Screen Shot 2021-09-24 at 4 53 10 PM" src="https://user-images.githubusercontent.com/41180186/134750301-583cad4a-ff2c-4466-8acd-8f96f003b803.png">
+
+#### From workbench
+
+<img width="943" alt="Screen Shot 2021-09-24 at 4 56 59 PM" src="https://user-images.githubusercontent.com/41180186/134750455-40ca26bc-6704-4598-9bf1-423fbb0adbf8.png">
+
+
+### 6. Create new user in MySQL client
 
 Using root in applications opens up large security risks, so create a new user to give access to the database to.\
 From the Spring tutorial, these are the commands to create a new user and grant them permissions for a database (names replaced):
@@ -48,5 +58,7 @@ mysql> grant all on db_phonebook.* to 'springuser'@'%'; -- Gives all privileges 
 ```
 
 ##
+
+To start the server, simply start the Docker container by running `docker start [container]`.\
 
 From here, create the Spring classes as specified in the phonebook_spring repo. 
