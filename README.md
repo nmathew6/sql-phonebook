@@ -9,7 +9,7 @@ Set up the Raspberry Pi in order to use it to host the mySQL server. To install 
 
 ### 2.  Install Docker
 
-Docker is a powerful tool used to deploy "containerized" apps as a container, making it possible to run apps on a server more efficiently, mainly due to containers sharing an operating system.
+Docker is a powerful tool used to deploy "containerized" apps as a container, making it possible to run apps on a server more efficiently, mainly due to containers sharing an operating system. [This] (https://phoenixnap.com/kb/docker-on-raspberry-pi) is a tutorial to install docker on raspberry pi.
 Here are commonly used Docker commands:
 | Command | Description |
 | --- | --- |
@@ -27,7 +27,7 @@ Here are commonly used Docker commands:
   2. Deploy the container by running `sudo docker run --name=spring_tutorial_mySQL -p 3306:3306 -d mysql/mysql-server:latest`. In this case, the container is named spring_tutorial_mySQL maps the mySQL port to a host port. 
 
 ### 4. Connect mySQL client to server
-  1. Install mySQL client package: `apt-get install mysql-client`
+  1. Install mySQL client package: `apt-get install default-mysql-client`
   2. Find and copy generated root password by running `sudo docker logs mysql_docker`. (Image from phoenixNAP tutorial) 
   ![image](https://user-images.githubusercontent.com/41180186/133352211-9988bd79-dea1-4e5b-b8c1-0a1e10c36984.png)
   3. Enter the container bash shell by running `sudo docker exec -it spring_tutorial_mySQL bash` and use the generated root password where prompted.
