@@ -9,7 +9,7 @@ Set up the Raspberry Pi in order to use it to host the mySQL server. To install 
 
 ### 2.  Install Docker
 
-Docker is a powerful tool used to deploy "containerized" apps as a container, making it possible to run apps on a server more efficiently, mainly due to containers sharing an operating system. [This] (https://phoenixnap.com/kb/docker-on-raspberry-pi) is a tutorial to install docker on raspberry pi.
+Docker is a powerful tool used to deploy "containerized" apps as a container, making it possible to run apps on a server more efficiently, mainly due to containers sharing an operating system. [This](https://phoenixnap.com/kb/docker-on-raspberry-pi) is a tutorial to install docker on raspberry pi.
 Here are commonly used Docker commands:
 | Command | Description |
 | --- | --- |
