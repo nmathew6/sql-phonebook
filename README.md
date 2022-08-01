@@ -30,8 +30,9 @@ Here are commonly used Docker commands:
   1. Install mySQL client package: `apt-get install default-mysql-client`
   2. Find and copy generated root password by running `sudo docker logs mysql_docker`. (Image from phoenixNAP tutorial) 
   ![image](https://user-images.githubusercontent.com/41180186/133352211-9988bd79-dea1-4e5b-b8c1-0a1e10c36984.png)
-  3. Enter the container bash shell by running `sudo docker exec -it spring_tutorial_mySQL bash` and use the generated root password where prompted.
-  4. Change the password of the root by running `ALTER USER 'root'@'localhost' IDENTIFIED BY '[newpassword]';`, replacing newpassword with a chosen new password.
+  3. Enter the container bash shell by running `sudo docker exec -it spring_tutorial_mySQL bash` 
+  4. Enter the command `mysql -uroot -p` and paste the generated root password where prompted.
+  5. Change the password of the root by running `ALTER USER 'root'@'localhost' IDENTIFIED BY '[newpassword]';`, replacing newpassword with a chosen new password.
 
 For more detailed directions for steps 1-3, follow the steps on the phoenixNAP tutorial, except use the command from 2.2 instead of the command in the directions
 (which doesn't bind the container to a port). 
